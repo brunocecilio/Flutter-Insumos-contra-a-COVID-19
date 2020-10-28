@@ -6,6 +6,15 @@ Aplicativo para visualização dos dados disponibilizados pelo Ministério da Sa
 
 Trabalho relativo a matéria Optativa 2 - Desenvolvimento mobile, do Instituto Federal de Brasília, Campus Taguatinga.
 
+## Telas
+___
+<div align=center>
+    <img alt="Tela do Mapa" src="repo_files/gifs/map.gif" width="250" />
+    <img alt="Tela dos Gráficos" src="repo_files/gifs/charts.gif" width="250" />
+    <img alt="Tela da Lista" src="repo_files/gifs/list.gif" width="250" />
+</div>
+
 ## Referências
+___
 
 [online documentation](https://flutter.dev/docs)
