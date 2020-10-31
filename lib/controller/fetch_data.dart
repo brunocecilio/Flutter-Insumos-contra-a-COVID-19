@@ -16,7 +16,7 @@ Future<CovidData> fetchData() async {
   if (response.statusCode == 200) {
     final decodeData = utf8.decode(response.bodyBytes);
     final LineSplitter ls = new LineSplitter();
-    List<String> lines = ls.convert(decodeData);
+    final List<String> lines = ls.convert(decodeData);
     List<DataEntry> entries = [];
     Map<String, int> totalsMap = new Map();
     List<OrdinalInputs> estadosChartList = List<OrdinalInputs>();
@@ -28,7 +28,6 @@ Future<CovidData> fetchData() async {
     Map<String, int> statusChartMap = new Map();
     int minTotal;
     int maxTotal;
-    CovidData covidData;
 
     for (int i = 0; i < Constants.mapNames.length; i++) {
       totalsMap[Constants.mapNames[i]] = 0;
@@ -163,7 +162,7 @@ Future<CovidData> fetchData() async {
           toStringSepareted(input.value),
     );
 
-    covidData = new CovidData(
+    final CovidData covidData = new CovidData(
         inputs: entries,
         totals: totalsMap,
         minTotals: minTotal,
